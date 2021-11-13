@@ -1,0 +1,11 @@
+/* HTML */
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 50pt;
+    font-weight: bold;
+}
