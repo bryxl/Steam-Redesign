@@ -9,3 +9,14 @@ h1 {
     font-size: 50pt;
     font-weight: bold;
 }
+
+/* Navigation */
+
+/* Secondary Nav */
+a {
+    text-decoration: none;
+    color: white;
+}
+.secNav {
+    background-color: E5E5E5;
+}
