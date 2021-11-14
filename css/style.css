@@ -9,3 +9,7 @@ h1 {
     font-size: 50pt;
     font-weight: bold;
 }
+
+.breadcrumbs {
+    background-color: #f8f8fd;
+}
