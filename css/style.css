@@ -14,10 +14,19 @@ h1 {
     background-color: #f8f8fd;
 }
 .indvreview {
-    font: ;
+    background-color: lightgrey;
+    width: 873px;
+    height: 300px;
+    padding: 50px;
+    margin: 20px;
 }
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50;
+}
+
+
+.filters {
+  position:absolute; right:0
 }
