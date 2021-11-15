@@ -60,12 +60,12 @@ a {
 .leftContent {
     grid-area: "leftContent";
     margin: 0px;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 .rightSidebar {
     grid-area: "rightSidebar";
     margin: 0px;
-    margin-top: 80px;
+    margin-top: 145px;
 }
 
 /* Game Page - Left Content */
@@ -73,10 +73,42 @@ a {
     
 }
 .gamePreview {
-    height: 496px;
-    width: 878px;
-    border: 1px solid white;
+    width: 1100px !important;
+    height: 600px;
 }
+
+/* Start Carousel */
+.container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.carousel-inner img {
+    width: 854px;
+    height: 480px;
+}
+#custCarousel .carousel-indicators {
+    position: static;
+    margin-top: 20px;
+}
+#custCarousel .carousel-indicators>li {
+    width: 100px;
+}
+#custCarousel .carousel-indicators li img {
+    display: block;
+    opacity: 0.5;
+}
+#custCarousel .carousel-indicators li.active img {
+    opacity: 1;
+}
+#custCarousel .carousel-indicators li:hover img {
+    opacity: 0.75;
+}
+.carousel-item img {
+    width: 854px;
+    height: 480px;
+} 
+/* End Carousel */
+
 .About {
     margin-top: 25px;
 }
@@ -84,6 +116,9 @@ a {
     margin-top: 25px;
 }
 .Editions {
+    margin-top: 25px;
+}
+.Reviews {
     margin-top: 25px;
 }
 .showMore {
@@ -128,27 +163,33 @@ a {
     color: #A0A0A0;
 }
 .edition {
-    margin: 15px;
+    margin-top: 25px;
+    width: 1500px;
 }
 .editionCards {
-    width: 1000px;
+    width: 1190px;
     height: 244px;
     border-radius: 10px;
     background-color: #26273A;
+}
+.inner-border {
+    outline: 1px solid #151626;
+    outline-offset: -15px;
 }
 .img {
     height: 169px;
     width: 312px;
     margin-top: 38px;
+    margin-left: 25px;
 }
 .gameInfo {
     margin-top: 35px;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 .editionInfo {
     color: white;
     font-size: 14px;
-    width: 450px;
+    width: 620px;
 }
 .editionCost {
     margin-top: 70px;
@@ -161,17 +202,34 @@ a {
 }
 .reviewCard {
     width: 1000px;
-    height: 244px;
     border-radius: 10px;
     background-color: #26273A;
+}
+.user {
+    height: 73px;
+    width: 73px;
 }
 .userReviews {
     margin-top: 20px;
     margin-left: 20px;
+    margin-right: 20px;
     border-bottom: 1px solid black;
+}
+.reviewRating {
+    float: right;
+    margin-left: 10px;
+}
+.arrow {
+    height: 23px;
+    width: 37px;
 }
 .reviewInfo {
     margin-left: 50px;
+}
+.reviewContent {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 170px;
 }
 
 /* Game Page - Right Sidebar */
@@ -191,3 +249,85 @@ a {
     border-color: white;
     margin-top: 10px;
 }
+/* Chat
+/* Chat Box */
+.chat {
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    box-sizing: border-box;
+}
+.userChat {
+    height: 57px;
+    width: 57px;
+}
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: #C4C4C4;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #C4C4C4;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #C4C4C4
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #C4C4C4;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #C4C4C4;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: #C4C4C4;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+*/

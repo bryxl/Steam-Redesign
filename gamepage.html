@@ -64,14 +64,38 @@
   <div class="containerGrid">
     <div class="leftContent"> <!-- Start Left Content -->
       <div class="container-fluid">
-        <div class="row">
+        <div class="row top">
           <div class="projectSpace col-lg-2"></div>
           <h2 class="gameTitle col-lg-5">Happy Game</h2>
           <h3 class="gameTitle col-lg-3">Genre | Adventure</h3>
         </div>
-        <div class="row">
+        <div class="row col-lg-12">
           <div class="projectSpace col-lg-2"></div>
-          <div class="gamePreview col-lg-9"></div>
+          <div class="gamePreview col-lg-10">
+            <div class="container"> <!-- Carousel -->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                          <!-- slides -->
+                          <div class="carousel-inner">
+                              <div class="carousel-item active"> 
+                                <iframe width="854" height="480" src="https://www.youtube.com/embed/u7XQpAKqB7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              </div>
+                              <div class="carousel-item"> <img src="./images/ss_4954c8846efa0dd0ead36781af9233a2c40f408a.600x338.jpg" alt="Hills"> </div>
+                              <div class="carousel-item"> <img src="./images/ss_d7732c6b9f7471579afe3c69fb1d70e76e8f0ab3.600x338.jpg" alt="Hills"> </div>
+                              <div class="carousel-item"> <img src="./images/ss_decfb595df67b0f2804f17eccb19cf2d77db9ea8.600x338.jpg" alt="Hills"> </div>
+                          </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                          <ol class="carousel-indicators list-inline">
+                              <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="./images/Screen Shot 2021-11-15 at 3.12.19 PM.png" class="img-fluid"> </a> </li>
+                              <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="./images/ss_4954c8846efa0dd0ead36781af9233a2c40f408a.600x338.jpg" class="img-fluid"> </a> </li>
+                              <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="./images/ss_d7732c6b9f7471579afe3c69fb1d70e76e8f0ab3.600x338.jpg" class="img-fluid"> </a> </li>
+                              <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="./images/ss_decfb595df67b0f2804f17eccb19cf2d77db9ea8.600x338.jpg" class="img-fluid"> </a> </li>
+                          </ol>
+                      </div>
+                  </div>
+              </div> <!-- End Carousel -->
+          </div>
+          </div>
         </div>
         <div class="row About"> <!-- About Container w. Collapse Module -->
           <div class="projectSpace col-lg-2"></div>
@@ -117,7 +141,7 @@
                 <p>Storage: 2 GB available space</p>
               </p>
             </div>
-            <div class="projectSpace col-lg-1"></div>
+            <div class="projectSpace col-lg-2"></div>
             <div class="row col-lg-4">
               <p>
                 MINIMUM:</p>
@@ -131,16 +155,16 @@
             </div>
           </div>
         </div> <!-- End System Req -->
-        <div class="row col-lg-12 Editions">
+        <div class="row col-lg-12 Editions"> <!-- Start Editions -->
           <div class="projectSpace col-lg-2"></div>
-          <div class="row col-lg-9"><h3>Editions</h3></div>
+          <div class="row"><h3>Editions</h3></div>
           <div class="row edition">
             <div class="projectSpace col-lg-2"></div>
-            <div class="row col-lg-10 editionCards">
+            <div class="row col-lg-10 editionCards inner-border">
               <div class="img">
                 <img src="./images/happy_collectors.png">
               </div>
-              <div class="gameInfo">
+              <div class="gameInfo col-lg-7">
                 <h4>Happy Game Collector's Edition</h4>
                 <div class="editionInfo">
                   Includes 2 items: Happy Game, Happy Game Soundtrack
@@ -154,11 +178,11 @@
           </div>
           <div class="row edition">
             <div class="projectSpace col-lg-2"></div>
-            <div class="row col-lg-10 editionCards">
+            <div class="row col-lg-10 editionCards inner-border">
               <div class="img">
                 <img src="./images/amanita_bundle.png">
               </div>
-              <div class="gameInfo">
+              <div class="gameInfo col-lg-7">
                 <h4>Amanita Bundle</h4>
                 <div class="editionInfo">
                   Buy this bundle to save 20% off ll 14 items!
@@ -171,7 +195,7 @@
             </div>
           </div>
         </div> <!-- End Editions -->
-        <div class="row col-lg-11">
+        <div class="row col-lg-11 Reviews"><!-- Start Reviews -->
           <div class="projectSpace col-lg-2"></div>
           <div class="row col-lg-9"><h3>Critic Reviews</h3></div>
         </div>
@@ -196,52 +220,84 @@
             </div>
           </div>
         </div>
-        <div class="row edition">
+        <div class="row Reviews">
           <div class="projectSpace col-lg-2"></div>
           <div class="row col-lg-10 reviewCard">
-            <div class="row userReviews">
-              <div>
+            <div class="row userReviews col-lg-12">
+              <div class="row col-lg-2">
+                <img src="./images/user-circle.png" class="user">
+              </div>
+              <div class="row col-lg-2">
                 <p>User 3498395</p>
                 <p>939 products in account</p>
                 <p>67 reviews</p>
               </div>
-              <div class="reviewInfo">
+              <div class="reviewInfo col-lg-6">
                 <h3 class="reviewInfo">Recommended</h3>
                 <p class="reviewInfo">10.0 hrs on record </p>
+              </div>
+              <div class="reviewRating col-lg-2">
+                <div class="row">
+                  <img src="./images/icons/long-arrow-alt-up.png" class="arrow">
+                  <p>8</p>
+                  <img src="./images/icons/long-arrow-alt-down.png" class="arrow">
+                </div>
               </div>
             </div>
             <div class="row reviewContent">
               <div class="projectSpace col-lg-5"></div>
-              <div class="col-lg-6"><p>This games art style is awesome.
+              <div class="col-lg-6">
+                <p>POSTED: NOVEMBER %. 2021</p>
+                <p>This games art style is awesome.
                 This is beautiful.
-                Thank you Amanita Design!</p></div>
+                Thank you Amanita Design!</p>
+              </div>
             </div>
+          </div>
+          <div class="row col-lg-12 Reviews">
+            <div class="projectSpace col-lg-6"></div>
+            <div class="row col-lg-6"><h6>Browse All Reviews</h6></div>
           </div>
         </div>
       </div>
     </div> <!-- End Left Content -->
     <div class="rightSidebar">
-      <div class="row">
+      <div class="row col-lg-10">
         <img src="./images/happygame_logo.jpeg" class="image">
-        <div class="projectSpace col-lg-1"></div>
+        <div class="projectSpace col-lg-2"></div>
       </div>
-      <div class="row">
+      <div class="row col-lg-10">
         <p>$13.13</p>
       </div>
-      <div class="row">
+      <div class="row col-lg-10">
         <button class="btn btn-primary" type="submit">Add to Cart</button>
+        <div class="projectSpace col-lg-2"></div>
       </div>
-      <div class="row">
+      <div class="row col-lg-10">
         <button type="button" class="btn btn-outline-primary">Add to Wishlist</button>
       </div>
-      <div class="row">
+      <div class="row col-lg-10">
         <h6>All Reviews: Mostly Positive (1,430)</h6>
         <h6>Release Date: Nov 9, 2020</h6>
         <h6>Developer: Frontier Developments</h6>
         <h6>Publisher: Frontier Developments</h6>
       </div>
-    </div>
-  </div>
+    </div> <!-- End Right Sidebar -->
+  </div> <!-- End Container Grid -->
+  <div class="chat">
+    <div class="chat-popup" id="myForm"> <!-- Start Chat Box -->
+      <form action="/action_page.php" class="form-container">
+        <img src="./images/user-circle-1.png">
+        <p>User 232983</p>
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div> 
+  </div><!-- End Chat Box -->
 
 <footer>
 
@@ -252,7 +308,7 @@
 <!--jQuery, Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script src="./js/index"></script>
 </body>
 
 
