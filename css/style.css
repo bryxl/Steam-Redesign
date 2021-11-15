@@ -32,10 +32,59 @@ h6 {
 
 /* Navigation */
 
+nav {
+    background-color: #151626;
+}
+
 nav a {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
+
+.navbar-brand img {
+    max-height: 60px;
+}
+
+.nav-item {
+    margin-right: 5px;
+}
+
+.navIcon {
+    margin: 5px;
+}
+
+.bottomNav {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.bottomNav-items {
+   padding: 20px;
+}
+
+.bottomNav-items a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+}
+
+a.active {
+    color: rgb(1, 90, 255);
+}
+
+.bottomNav-items a:hover {
+    text-decoration: none;
+    color: rgb(1, 90, 255);
+    transition-duration: 0.6s;
+}
+
+.bottomNav input {
+    margin: 20px;
+}
+
+
 
 /* Discover */
 
@@ -43,15 +92,51 @@ nav a {
     position: relative;
     text-align: left;
     color: white;
+    margin-bottom: 50px;
 }
 
 #discoverHeroText {
     position: absolute;
-    bottom: 50px;
-    left: 200px;
+    bottom: 100px;
+    left: 150px;
 }
 
 #discoverHeroText p{
     width: 40%;
+}
+
+.offersCard {
+    background-color: lightgray;
+    padding: 8px;
+}
+
+.offersCard img {
+    margin-bottom: 5px;
+}
+
+.discoverFeed img {
+    height: 50px;
+    margin: 10px;
+}
+
+.feed-card {
+    background-color: lightgray;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+footer {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+footer img {
+    height: 60px;
+}
+
+.footerLinks a {
+    margin: 15px;
 }
 
