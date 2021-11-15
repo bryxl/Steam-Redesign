@@ -9,8 +9,29 @@ h1 {
     font-size: 50pt;
     font-weight: bold;
 }
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+}
+h6 {
+    margin-top: 5px;
+    font-weight: 300;
+    color: white;
+}
+p {
+    color: white;
+    padding: 15px;
+}
+.breadcrumbs {
+    margin-left: 100px;
+}
 
 /* Navigation */
+nav {
+    position: relative
+}
 
 /* Secondary Nav */
 a {
@@ -18,5 +39,53 @@ a {
     color: white;
 }
 .secNav {
-    background-color: E5E5E5;
+    height: 50px;
+    background-color: #C4C4C4;
+}
+
+/* Game Page */
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: 
+    "leftContent" "rightSidebar";
+}
+.leftContent {
+    grid-area: "leftContent";
+    margin: 0px;
+    margin-top: 30px;
+}
+.rightSidebar {
+    grid-area: "rightSidebar";
+    margin: 0px;
+    margin-top: 80px;
+}
+
+/* Game Page - Left Content */
+.gameTitle {
+    
+}
+.gamePreview {
+    height: 496px;
+    width: 878px;
+    border: 1px solid white;
+}
+
+/* Game Page - Right Sidebar */
+.image {
+    height: 135px;
+    width: 335px;
+}
+.btn-primary {
+    width: 335px;
+    height: 50px;
+    background-image: linear-gradient(to right, #34A3DB , #705FD9)
+}
+.btn-outline-primary {
+    width: 335px;
+    height: 35px;
+    color: white;
+    border-color: white;
+    margin-top: 10px;
 }
