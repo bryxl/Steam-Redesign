@@ -8,4 +8,50 @@ h1 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 50pt;
     font-weight: bold;
+    color: white;
 }
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+    color: white;
+}
+
+h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: white;
+}
+
+.caption {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+}
+
+/* Navigation */
+
+nav a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+/* Discover */
+
+.discoverHero {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+#discoverHeroText {
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+}
+
+#discoverHeroText p{
+    width: 40%;
+}
+
