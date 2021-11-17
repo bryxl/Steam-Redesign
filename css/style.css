@@ -27,7 +27,7 @@ h6 {
 }
 p {
     color: white;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 .breadcrumbs {
@@ -35,10 +35,58 @@ p {
 }
 
 /* Navigation */
+
 nav {
-    position: relative
+    background-color: #151626;
 }
 
+nav a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+}
+
+.nav-item {
+    margin-right: 5px;
+}
+
+.navIcon {
+    margin: 5px;
+}
+
+.bottomNav {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.bottomNav-items {
+   padding: 20px;
+}
+
+.bottomNav-items a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+}
+
+a.active {
+    color: rgb(1, 90, 255);
+}
+
+.bottomNav-items a:hover {
+    text-decoration: none;
+    color: rgb(1, 90, 255);
+    transition-duration: 0.6s;
+}
+
+.bottomNav input {
+    margin: 20px;
+}
 /* Secondary Nav */
 a {
     text-decoration: none;
@@ -166,25 +214,28 @@ a {
     margin-top: 25px;
     width: 1500px;
 }
+.saleTag {
+    width: 64px;
+    height: 52px;
+    background-color: #94C014;
+    position: relative;
+}
 .editionCards {
-    width: 1190px;
-    height: 244px;
     border-radius: 10px;
     background-color: #26273A;
+    z-index: 900;
+    padding: 25px;
 }
 .inner-border {
     outline: 1px solid #151626;
     outline-offset: -15px;
 }
 .img {
-    height: 169px;
-    width: 312px;
-    margin-top: 38px;
-    margin-left: 25px;
-}
-.gameInfo {
-    margin-top: 35px;
-    margin-left: 30px;
+    /* height: 169px;
+    width: 312px; */
+    width: 100%;
+    /* margin-top: 38px;
+    margin-left: 25px; */
 }
 .editionInfo {
     color: white;
@@ -195,13 +246,43 @@ a {
     margin-top: 70px;
     float: right;
 }
+.price {
+    margin-right: 15px;
+    margin-top: 10px;
+}
 .btn-secondary {
     width: 200px;
     height: 47px;
     background-image: linear-gradient(to right, #34A3DB , #705FD9)
 }
+.dot {
+    height: 110px;
+    width: 110px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+.criticCard {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #26273A;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.criticUser {
+    margin: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+.criticContent {
+    margin: 25px;
+}
 .reviewCard {
-    width: 1000px;
+    width: 1500px;
     border-radius: 10px;
     background-color: #26273A;
 }
@@ -249,30 +330,44 @@ a {
     border-color: white;
     margin-top: 10px;
 }
-/* Chat
+
 /* Chat Box */
+/* Chat Actions Box */
 .chat {
-    position: fixed;
-    bottom: 0px;
-    right: 50px;
-    box-sizing: border-box;
-}
-.userChat {
-    height: 57px;
-    width: 57px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px solid black;
 }
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
-  background-color: #555;
-  color: #C4C4C4;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
+    background-color: #26273A;
+    color: rgb(8, 8, 8);
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+}
+.chat-actions {
+    width: 14px;
+    height: 14px;
+    background-color: #26273A;
+}
+.btn-cancel {
+    background-color: #26273A;
+}
+
+/* Minnimized Chat */
+.minimChat {
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    width: 300px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    background-color: #26273A;
 }
 
 /* The popup chat - hidden by default */
@@ -281,53 +376,69 @@ a {
   position: fixed;
   bottom: 0;
   right: 15px;
-  border: 3px solid #C4C4C4;
+  border: 3px solid #26273A;
   z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: #C4C4C4
+  padding: 20px;
+  background-color: #26273A;
+  position: fixed;
+  bottom: 0px;
+  right: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Message History area */
+.messageHistory {
+    min-height: 300px;
+    width: 300px;
+    padding: 10px;
+    padding-top: 200px;
 }
 
 /* Full-width textarea */
 .form-container textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #C4C4C4;
-  resize: none;
-  min-height: 200px;
+    min-width: 250px;
+    height: 35px;
+    border: none;
+    background: #41424F;
+    resize: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 6px;
+    padding-left: 15px;
+    margin-left: 10px;
 }
 
 /* When the textarea gets focus, do something */
 .form-container textarea:focus {
-  background-color: #C4C4C4;
+  background-color: #41424F;
   outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
-  color: #C4C4C4;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
+    background-color: #26273A;
+    color: #26273A;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-left: 5px;
 }
 
 /* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
+.cancel {
+    background-color: #26273A;
+    font-size: 12px;
+    padding: 0px;
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
 }
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-*/
