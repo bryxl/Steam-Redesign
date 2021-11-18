@@ -1,37 +1,72 @@
 /* HTML */
 
 body {
-    background-color: black;
+    background-color: #151626;
+    font-family: Helvetica, Arial, sans-serif;
+    color:#f8f8fd;
 }
 
 h1 {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 50pt;
-    font-weight: bold;
-}
-h2 {
-    color: white;
-}
-h3 {
-    color: white;
-}
-h4 {
-    color: white;
-    font-size: 24px;
-    font-weight: 300;
-}
-h6 {
-    margin-top: 5px;
-    font-weight: 300;
-    color: white;
-}
-p {
-    color: white;
-    line-height: 25px;
+    font-size: 45pt;
+    font-weight: 700;
+    color: #f8f8fd;
 }
 
-.breadcrumbs {
-    margin-left: 100px;
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32pt;
+    font-weight: 600;
+    color: #f8f8fd;
+}
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28pt;
+    font-weight: 600;
+    color: #f8f8fd;
+}
+
+h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 25pt;
+    font-weight: 500;
+    color: #f8f8fd;
+}
+
+h5 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20pt;
+    font-weight: 400;
+    color: #f8f8fd;
+}
+
+h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    color: #f8f8fd;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: 400;
+    color: #f8f8fd;
+}
+
+.caption {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+}
+
+/*Added hover for .caption. -KS */
+.caption:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 3%;
 }
 
 /* Navigation */
@@ -49,24 +84,58 @@ nav a {
     max-height: 60px;
 }
 
+/* This is the OG .nav-item- KS
 .nav-item {
     margin-right: 5px;
 }
+*/
 
+/*Changed margin-right value to percentage-KS */
+.nav-item {
+    margin-right: 5%;
+}
+
+/* This is the OG .navIcon 
 .navIcon {
     margin: 5px;
 }
+*/
 
+/* Changed margin value to percentage-KS */
+.navIcon {
+    margin: 5%;
+}
+
+/* this is the OG botttomNav
 .bottomNav {
     background-color: lightgray;
     display: flex;
     align-items: center;
 }
+*/
 
+/*Changed background-color value to HEX-KS */
+
+.bottomNav {
+    background-color: #090909;
+    display: flex;
+    align-items: center;
+}
+
+
+/* This is the OG bottomNav-items- KS 
 .bottomNav-items {
    padding: 20px;
 }
+*/
 
+/*Changed padding value to percentage-KS */
+
+.bottomNav-items {
+    padding: 2%;
+}
+
+/*the is the OG bottomNav-items a, a.active, bottomNav-items a:hover, .bottomNav input -KS
 .bottomNav-items a {
     padding-left: 10px;
     padding-right: 10px;
@@ -87,358 +156,228 @@ a.active {
 .bottomNav input {
     margin: 20px;
 }
-/* Secondary Nav */
-a {
+
+*/
+
+/*I really tried to change the padding values to percentages but the code wouldn't cooperate.
+Changed the color to HEX value and assigned numbered font-weight.-KS*/
+.bottomNav-items a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+    color: #f8f8fd;
+}
+
+/*Changed color to HEX value.-KS*/
+a.active {
+    color: #34a3db;
+}
+
+/*Changed color to HEX value.-KS*/
+.bottomNav-items a:hover {
     text-decoration: none;
-    color: white;
-}
-.secNav {
-    height: 50px;
-    background-color: #C4C4C4;
+    color: #34a3db;
+    transition-duration: 0.6s;
 }
 
-/* Game Page  Layout*/
-
-.containerGrid {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-areas: 
-    "leftContent" "rightSidebar";
-}
-.leftContent {
-    grid-area: "leftContent";
-    margin: 0px;
-    margin-top: 100px;
-}
-.rightSidebar {
-    grid-area: "rightSidebar";
-    margin: 0px;
-    margin-top: 145px;
+/*Changed margin value to percentage.-KS*/
+.bottomNav input {
+    margin: 2%;
 }
 
-/* Game Page - Left Content */
-.gameTitle {
-    
-}
-.gamePreview {
-    width: 1100px !important;
-    height: 600px;
-}
+/* Discover Hero Section */
 
-/* Start Carousel */
-.container {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.carousel-inner img {
-    width: 854px;
-    height: 480px;
-}
-#custCarousel .carousel-indicators {
-    position: static;
-    margin-top: 20px;
-}
-#custCarousel .carousel-indicators>li {
-    width: 100px;
-}
-#custCarousel .carousel-indicators li img {
-    display: block;
-    opacity: 0.5;
-}
-#custCarousel .carousel-indicators li.active img {
-    opacity: 1;
-}
-#custCarousel .carousel-indicators li:hover img {
-    opacity: 0.75;
-}
-.carousel-item img {
-    width: 854px;
-    height: 480px;
-} 
-/* End Carousel */
-
-.About {
-    margin-top: 25px;
-}
-.System {
-    margin-top: 25px;
-}
-.Editions {
-    margin-top: 25px;
-}
-.Reviews {
-    margin-top: 25px;
-}
-.showMore {
-    background-color: #26273A;
-    width: 920px;
-    margin-top: 30px;
-    padding: 15px;
-}
-#module {
-    width: 1100px;
-}
-#module p.collapse [aria-expanded="false"] {
-    display: block;
-    height: 40px !important;
-    overflow: hidden;
-}
-#module p.collapsing [aria-expanded="false"] {
-    height: 40px !important;
-}
-#module a.collapsed:after {
-    content: '+ Show More';
-    width: 1000px;
-    height: 15px;
-    margin-top: 50px;
-    padding: 15px;
-    background-color: #26273A;
-    margin-left: 370px;
-    font-size: 18px;
-    font-variant-caps: all-small-caps;
-    color: #A0A0A0;
-}
-#module a:not(.collapsed):after {
-    content: '- Show Less';
-    width: 1000px;
-    height: 15px;
-    margin-top: 30px;
-    padding: 15px;
-    background-color: #26273A;
-    margin-left: 370px;
-    font-size: 18px;
-    font-variant-caps: all-small-caps;
-    color: #A0A0A0;
-}
-.edition {
-    margin-top: 25px;
-    width: 1500px;
-}
-.saleTag {
-    width: 64px;
-    height: 52px;
-    background-color: #94C014;
+.discoverHero {
     position: relative;
-}
-.editionCards {
-    border-radius: 10px;
-    background-color: #26273A;
-    z-index: 900;
-    padding: 25px;
-}
-.inner-border {
-    outline: 1px solid #151626;
-    outline-offset: -15px;
-}
-.img {
-    /* height: 169px;
-    width: 312px; */
-    width: 100%;
-    /* margin-top: 38px;
-    margin-left: 25px; */
-}
-.editionInfo {
+    text-align: left;
     color: white;
-    font-size: 14px;
-    width: 620px;
-}
-.editionCost {
-    margin-top: 70px;
-    float: right;
-}
-.price {
-    margin-right: 15px;
-    margin-top: 10px;
-}
-.btn-secondary {
-    width: 200px;
-    height: 47px;
-    background-image: linear-gradient(to right, #34A3DB , #705FD9)
-}
-.dot {
-    height: 110px;
-    width: 110px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-.criticCard {
-    height: 400px;
-    width: 300px;
-    border-radius: 10px;
-    background-color: #26273A;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    margin-left: 15px;
-}
-.criticUser {
-    margin: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid black;
-}
-.criticContent {
-    margin: 25px;
-}
-.reviewCard {
-    width: 1500px;
-    border-radius: 10px;
-    background-color: #26273A;
-}
-.user {
-    height: 73px;
-    width: 73px;
-}
-.userReviews {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-bottom: 1px solid black;
-}
-.reviewRating {
-    float: right;
-    margin-left: 10px;
-}
-.arrow {
-    height: 23px;
-    width: 37px;
-}
-.reviewInfo {
-    margin-left: 50px;
-}
-.reviewContent {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 170px;
+    /*margin-bottom: 50px;*/
+    margin-bottom: 5%;
 }
 
-/* Game Page - Right Sidebar */
-.image {
-    height: 135px;
-    width: 335px;
+#discoverHeroText {
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
 }
-.btn-primary {
-    width: 335px;
+
+#discoverHeroText p{
+    width: 40%;
+}
+
+/* buyButton */
+
+.buyButton {
+    background-color: #34a3db;
+    border-radius: 10%;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #f8f8fd;
+    padding: 1% 2%;
+    width: auto;
+    display: block;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.buyButton:hover {
+    background: linear-gradient(to right, #34a3db, #705fd9);
+    transition-duration: 0.6s;
+}
+
+
+
+/* Discovery Offers Section */
+
+
+.discoveryOffers h2{
+    margin-left: 5%;
+}
+
+.discoveryOffers a {
+    color: #34a3db;
+    margin-left: 5%;
+}
+
+.discoveryOffers a:hover {
+    text-decoration: underline; 
+    transition-duration: 0.6s;
+}
+
+
+/* This is the OG .offersCard, .offersCard img, .discoverFeed img
+.offersCard {
+    background-color: lightgray;
+    padding: 8px;
+}
+
+.offersCard img {
+    margin-bottom: 5px;
+}
+
+.discoverFeed img {
     height: 50px;
-    background-image: linear-gradient(to right, #34A3DB , #705FD9)
+    margin: 10px;
 }
-.btn-outline-primary {
-    width: 335px;
-    height: 35px;
-    color: white;
-    border-color: white;
-    margin-top: 10px;
+*/
+
+.offersCard {
+    background: linear-gradient(to right, #34a3db, #705fd9);
+    margin-top: 5%;
+    padding-bottom: 5%;
 }
 
-/* Chat Box */
-/* Chat Actions Box */
-.chat {
+#offersAlt {
+    background: linear-gradient(to right, #705fd9, #34a3db);
+}
+
+
+.offersCard img {
+    margin-bottom: 5%;
+}
+
+.offersCard h5 {
+    margin-left: 5%;
+}
+
+.offersCard p {
+    margin-left: 5%;
+}
+
+
+
+
+/*Discover Feed Section */
+
+/* This is the OG .feed-card 
+.feed-card {
+    background-color: lightgray;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+*/
+
+.feed-card {
+    background-color: #705fd9;
+    padding-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+   
+}
+
+.discoverFeed img {
     height: 50px;
-    padding: 10px;
-    border-bottom: 1px solid black;
-}
-/* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-    background-color: #26273A;
-    color: rgb(8, 8, 8);
-    border: none;
-    cursor: pointer;
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-    margin-left: auto;
-}
-.chat-actions {
-    width: 14px;
-    height: 14px;
-    background-color: #26273A;
-}
-.btn-cancel {
-    background-color: #26273A;
+    margin-left: 5%;
 }
 
-/* Minnimized Chat */
-.minimChat {
-    position: fixed;
-    bottom: 0px;
-    right: 50px;
-    width: 300px;
+.discoverRecent h3 {
+    margin-left: 5%;
+}
+
+/* Footer */
+
+/* This is the OG footer code 
+footer {
+    background-color: lightgray;
+    padding: 20px;
+}
+*/
+
+footer {
+    background: linear-gradient(#090909, #151626);
+    /*padding: 20px;*/
+    padding: 5%;
+}
+
+footer img {
     height: 60px;
-    padding: 15px;
-    border-radius: 10px 10px 0 0;
-    background-color: #26273A;
 }
 
-/* The popup chat - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #26273A;
-  z-index: 9;
+footer p {
+    font-size: 12pt;
 }
 
-/* Add styles to the form container */
-.form-container {
-  padding: 20px;
-  background-color: #26273A;
-  position: fixed;
-  bottom: 0px;
-  right: 50px;
-  border-radius: 10px 10px 0 0;
+footer p a {
+    font-size: 12pt;
 }
 
-/* Message History area */
-.messageHistory {
-    min-height: 300px;
-    width: 300px;
-    padding: 10px;
-    padding-top: 200px;
+footer a {
+    color: #34a3db;
 }
 
-/* Full-width textarea */
-.form-container textarea {
-    min-width: 250px;
-    height: 35px;
-    border: none;
-    background: #41424F;
-    resize: none;
-    font-size: 14px;
-    border-radius: 5px;
-    padding: 6px;
-    padding-left: 15px;
-    margin-left: 10px;
+.text-center a {
+    margin: 2%;
 }
 
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
-  background-color: #41424F;
-  outline: none;
+footer a:hover {
+    color: #34a3db;
+    text-decoration: underline;
+    transition-duration: 0.6s;
 }
 
-/* Set a style for the submit/login button */
-.form-container .btn {
-    background-color: #26273A;
-    color: #26273A;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    margin-left: 5px;
+.footerLinks a {
+    margin: 2%;
 }
 
-/* Add a red background color to the cancel button */
-.cancel {
-    background-color: #26273A;
-    font-size: 12px;
-    padding: 0px;
-    height: 20px;
-    width: 20px;
-    margin-left: auto;
+
+.breadcrumbs {
+    background-color: #f8f8fd;
+}
+.indvreview {
+    background-color: lightgrey;
+    width: 873px;
+    height: 300px;
+    padding: 50px;
+    margin: 20px;
 }
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50;
+}
+
+
+.filters {
+  position:absolute; right:0
 }
