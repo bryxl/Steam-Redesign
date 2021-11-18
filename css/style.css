@@ -6,7 +6,7 @@ body {
 
 h1 {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 50pt;
+    font-size: 45pt;
     font-weight: bold;
 }
 
@@ -15,7 +15,7 @@ h1 {
 }
 .indvreview {
     background-color: lightgrey;
-    width: 873px;
+    max-width: 873px;
     height: 300px;
     padding: 50px;
     margin: 20px;
@@ -27,6 +27,18 @@ h2 {
 }
 
 
-.filters {
-  position:absolute; right:0
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "leftcontent" "rightcontent";
+}
+
+.leftcontent {
+    grid-area: "leftcontent";
+}
+
+.rightcontent {
+    grid-area: "rightcontent";
 }
