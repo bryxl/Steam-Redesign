@@ -1,12 +1,7 @@
-function displayFunction() {
-    var sampleDiv = document.getElementById('sampleDiv');
-    if (sampleDiv.style.display === 'none') {
-        sampleDiv.style.display = 'block';
-    }
-    else {
-        sampleDiv.style.display = 'none';    
-    }
-    var element = document.getElementById("open-button");
-    element.classList.toggle("minimChat");
-}
-
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }

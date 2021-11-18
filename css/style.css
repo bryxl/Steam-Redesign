@@ -70,7 +70,6 @@ section {
 }
 
 /* Navigation */
-
 nav {
     background-color: #151626;
 }
@@ -348,6 +347,46 @@ footer a {
 
 .text-center a {
     margin: 2%;
+    display: block;
+    height: 40px !important;
+    overflow: hidden;
+}
+#module p.collapsing [aria-expanded="false"] {
+    height: 40px !important;
+}
+#module a.collapsed:after {
+    content: '+ Show More';
+    width: 1000px;
+    height: 15px;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #26273A;
+    margin-left: 370px;
+    font-size: 18px;
+    font-variant-caps: all-small-caps;
+    color: #A0A0A0;
+}
+#module a:not(.collapsed):after {
+    content: '- Show Less';
+    width: 1000px;
+    height: 15px;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #26273A;
+    margin-left: 370px;
+    font-size: 18px;
+    font-variant-caps: all-small-caps;
+    color: #A0A0A0;
+}
+.edition {
+    margin-top: 25px;
+    width: 1500px;
+}
+.editionCards {
+    width: 1190px;
+    height: 244px;
+    border-radius: 10px;
+    background-color: #26273A;
 }
 
 footer a:hover {
@@ -363,6 +402,71 @@ footer a:hover {
 
 .breadcrumbs {
     background-color: #f8f8fd;
+/* .img {
+    height: 169px;
+    width: 312px;
+    margin-top: 38px;
+    margin-left: 25px; */
+}
+.gameInfo {
+    margin-top: 35px;
+    margin-left: 30px;
+}
+.editionInfo {
+    color: white;
+    font-size: 14px;
+    width: 620px;
+}
+.editionCost {
+    margin-top: 70px;
+    float: right;
+}
+.btn-secondary {
+    width: 200px;
+    height: 47px;
+    background-image: linear-gradient(to right, #34A3DB , #705FD9)
+}
+.reviewCard {
+    width: 1000px;
+    border-radius: 10px;
+    background-color: #26273A;
+}
+.user {
+    height: 73px;
+    width: 73px;
+}
+.userReviews {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid black;
+}
+.reviewRating {
+    float: right;
+    margin-left: 10px;
+}
+.arrow {
+    height: 23px;
+    width: 37px;
+}
+.reviewInfo {
+    margin-left: 50px;
+}
+.reviewContent {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 170px;
+}
+
+/* Game Page - Right Sidebar */
+.image {
+    height: 135px;
+    width: 335px;
+}
+.btn-primary {
+    width: 335px;
+    height: 50px;
+    background-image: linear-gradient(to right, #34A3DB , #705FD9)
 }
 .indvreview {
     background-color: lightgrey;
@@ -380,4 +484,86 @@ h2 {
 
 .filters {
   position:absolute; right:0
+/* Chat*/
+/* Chat Box */
+
+}
+.chat {
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    box-sizing: border-box;
+}
+.userChat {
+    height: 57px;
+    width: 57px;
+}
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: #C4C4C4;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #C4C4C4;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #C4C4C4
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #C4C4C4;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #C4C4C4;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: #C4C4C4;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }
