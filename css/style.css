@@ -662,13 +662,25 @@ h2 {
   
  /* GAME PAGE - FILTER */
  .btn-info {
-    background-color: black !important;
+    background-color: #151626 !important;
     border: none;
     width: 300px;
     text-align: left;
-    border-bottom: 1px solid white !important;
+    border-bottom: 1px solid #5E5E64 !important;
     border-radius: 0px;
     padding: 10px;
+    color: #5E5E64;
+ }
+ .card-header {
+    background-color: #151626 !important;
+    width: 300px;
+    text-align: left;
+    border: 1px solid #151626 !important;
+ }
+
+ a {
+     color: #5E5E64;
+     margin-bottom: 15px;
  }
   
  /* Chat Box */
