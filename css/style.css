@@ -684,8 +684,8 @@ h2 {
  }
   
  /* Chat Box */
- /* Chat Actions Box */
- .chat {
+/* Chat Actions Box */
+.chat {
     height: 50px;
     padding: 10px;
     border-bottom: 1px solid black;
@@ -720,77 +720,78 @@ h2 {
     padding: 15px;
     border-radius: 10px 10px 0 0;
     background-color: #26273A;
-}
+ }
+  
+ /* The popup chat - hidden by default */
+ .form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #26273A;
+  z-index: 9;
+ }
+  
+ /* Add styles to the form container */
+ .form-container {
+  padding: 20px;
+  background-color: #26273A;
+  position: fixed;
+  bottom: 0px;
+  right: 50px;
+  border-radius: 10px 10px 0 0;
+ }
+  
+ /* Message History area */
+ .messageHistory {
+    min-height: 300px;
+    width: 300px;
+    padding: 10px;
+    padding-top: 200px;
+ }
+  
+ /* Full-width textarea */
+ .form-container textarea {
+    min-width: 250px;
+    height: 35px;
+    border: none;
+    background: #41424F;
+    resize: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 6px;
+    padding-left: 15px;
+    margin-left: 10px;
+ }
+  
+ /* When the textarea gets focus, do something */
+ .form-container textarea:focus {
+  background-color: #41424F;
+  outline: none;
+ }
+  
+ /* Set a style for the submit/login button */
+ .form-container .btn {
+    background-color: #26273A;
+    color: #26273A;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-left: 5px;
+ }
+  
+ /* Add a red background color to the cancel button */
+ .cancel {
+    background-color: #26273A;
+    font-size: 12px;
+    padding: 0px;
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
+ }
+  
+ /* Add some hover effects to buttons */
+ .form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+ }
  
-/* The popup chat - hidden by default */
-.form-popup {
- display: none;
- position: fixed;
- bottom: 0;
- right: 15px;
- border: 3px solid #26273A;
- z-index: 9;
-}
- 
-/* Add styles to the form container */
-.form-container {
- padding: 20px;
- background-color: #26273A;
- position: fixed;
- bottom: 0px;
- right: 50px;
- border-radius: 10px 10px 0 0;
-}
- 
-/* Message History area */
-.messageHistory {
-   min-height: 300px;
-   width: 300px;
-   padding: 10px;
-   padding-top: 200px;
-}
- 
-/* Full-width textarea */
-.form-container textarea {
-   min-width: 250px;
-   height: 35px;
-   border: none;
-   background: #41424F;
-   resize: none;
-   font-size: 14px;
-   border-radius: 5px;
-   padding: 6px;
-   padding-left: 15px;
-   margin-left: 10px;
-}
- 
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
- background-color: #41424F;
- outline: none;
-}
- 
-/* Set a style for the submit/login button */
-.form-container .btn {
-   background-color: #26273A;
-   color: #26273A;
-   border: none;
-   cursor: pointer;
-   opacity: 0.8;
-   margin-left: 5px;
-}
- 
-/* Add a red background color to the cancel button */
-.cancel {
-   background-color: #26273A;
-   font-size: 12px;
-   padding: 0px;
-   height: 20px;
-   width: 20px;
-   margin-left: auto;
-}
- 
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
- opacity: 1;
-}      
